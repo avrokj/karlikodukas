@@ -470,15 +470,19 @@ footer ul {
     overflow-x: hidden;
   }
 
-  .gallery img {
-    min-width: 50%;
+  .gallery a {
     height: auto;
-    max-width: 50%;
     transition: all 1s;
     animation-duration: 20s;
     animation-name: galleryscroll;
     animation-iteration-count: 1000;
     margin: 0 0.4em;
+  }
+
+  .gallery img {
+    min-width: 50vw;
+    height: auto;
+    max-width: 50vw;
   }
 
   @keyframes galleryscroll {
@@ -487,7 +491,7 @@ footer ul {
     }
 
     50% {
-      transform: translateX(-400%);
+      transform: translateX(-220vw);
     }
 
     100% {
