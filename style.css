@@ -11,6 +11,8 @@ img {
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -18,20 +20,28 @@ body {
   align-items: center;
   color: #fff;
   font-family: 'Inter';
-  gap: 2rem;
+  gap: 2em;
   font-size: 22px;
+  font-weight: 300;
 }
 
-header .container {
+header .container,
+footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 90%;
+  margin: auto;
 }
 
-.container {
-  max-width: 1180px;
-  margin: auto;
+content .container {
+  width: 1180px;
+  margin: 2rem auto;
+}
+
+.portfolio content .container img {
+  width: 100%;
+  height: auto;
 }
 
 .nav {
@@ -40,9 +50,9 @@ header .container {
 
 .nav ul li {
   display: inline;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 500;
-  margin: 0 0.5rem;
+  margin: 0 0.5em;
   opacity: 0.9;
 }
 
@@ -54,6 +64,27 @@ a:link {
 a:visited {
   text-decoration: none;
   color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 120%;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.3em;
 }
 
 .logo {
@@ -72,6 +103,10 @@ a:visited {
   opacity: 1;
 }
 
+.burger {
+  display: none;
+}
+
 .content {
   margin: 2rem 0;
   padding: 0 1rem 0 1rem;
@@ -80,7 +115,7 @@ a:visited {
 
 .container {
   padding: 1rem;
-  transition: 2s;
+  transition: 0.5s;
   text-align: center;
 }
 
@@ -94,20 +129,103 @@ a:visited {
 .slogan div {
   width: 720px;
   height: auto;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .title {
-  margin-bottom: 80px;
-  font-size: 96px;
+  font-size: 6rem;
 }
 
-.mb160 {
-  margin-bottom: 160px;
+.mt-xs {
+  margin-top: 1.5rem;
 }
 
-.mt160 {
-  margin-top: 160px;
+.mb-xs {
+  margin-bottom: 1.5rem;
+}
+
+.mb-s {
+  margin-bottom: 3rem;
+}
+
+.mt-s {
+  margin-top: 3rem;
+}
+
+.mb-m {
+  margin-bottom: 4.5rem;
+}
+
+.mt-m {
+  margin-top: 4.5rem;
+}
+
+.mb-l {
+  margin-bottom: 6rem;
+}
+
+.mt-l {
+  margin-top: 6rem;
+}
+
+.mb-xl {
+  margin-bottom: 10rem;
+}
+
+.mt-xl {
+  margin-top: 10rem;
+}
+
+.mt-xxl {
+  margin-top: 20rem;
+}
+
+.mt-xxxl {
+  margin-top: 30rem;
+}
+
+.pb-xs {
+  padding-bottom: 1.5rem;
+}
+
+.pt-xs {
+  padding-top: 1.5rem;
+}
+
+.pb-s {
+  padding-bottom: 3rem;
+}
+
+.pt-s {
+  padding-top: 3rem;
+}
+
+.pb-m {
+  padding-bottom: 4.5rem;
+}
+
+.pt-m {
+  padding-top: 4.5rem;
+}
+
+.pb-l {
+  padding-bottom: 6rem;
+}
+
+.pt-l {
+  padding-top: 6rem;
+}
+
+.pb-xl {
+  padding-bottom: 10rem;
+}
+
+.pt-xl {
+  padding-top: 10rem;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .gallery {
@@ -133,6 +251,10 @@ a:visited {
 .services div {
   padding: 30px;
   font-size: 27px;
+}
+
+.services a:link {
+  color: #000;
 }
 
 .services1 {
@@ -164,49 +286,266 @@ a:visited {
 
 .text div {
   height: auto;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
-.contact {
+.portfolio .text div {
+  width: 70%;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.contact p {
   font-size: 64px;
 }
 
 footer {
-  margin: 0 0 1rem 0;
-  padding: 0 1rem 1rem 1rem;
+  margin: 0 0 1em 0;
   background-color: #fff;
   color: #000;
 }
 
-footer div{
+footer a:link {
+  color: #000;
+}
+
+footer a:visited {
+  color: #000;
+}
+
+footer div {
   text-align: left;
-  transition: 2s;
+  transition: 1s;
   display: flex;
   justify-content: space-between;
 }
-footer ul{
+
+footer ul {
   text-align: right;
-  transition: 2s;
+  transition: 1s;
   display: flex;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  line-height: 120%;
-  font-weight: 500;
+.col2 {
+  display: flex;
+  gap:5rem;
+  height:100%;
+  max-height:100%;
 }
 
-h1 {
-  font-size: 1.8rem;
+.stack1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+  justify-content: flex-end;
 }
 
-h2 {
+.stack2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.stack1 p, .stack2 p {
+  width: 60%;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.review {
+  display: flex;
+  align-items: stretch;
+  gap: 5rem;
+}
+
+.review div:first-child {
+  width: 37%;
+}
+
+.review div:nth-child(2) {
+  width: 63%;
+  text-align: left;
+}
+
+.review div:nth-child(2) p {
+  font-size: 1.75rem;
+  line-height: 2.3rem;
+}
+
+.reviewer {
+  display: flex;
+  margin-left: -1em;
   font-size: 1.5rem;
 }
 
-h3 {
-  font-size: 1.3rem;
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+
+  body {
+    gap: 1em;
+    font-size: 8px;
+  }
+
+  .logo {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.5s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 5px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .nav.responsive {
+    position: relative;
+  }
+
+  .nav-links {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #000;
+    width: 100%;
+  }
+
+  .nav-links li {
+    padding: 0.25em 0;
+    border-bottom: 1px solid #111;
+    font-size: 2em;
+  }
+
+  .slogan div {
+    width: 70%;
+    height: auto;
+    font-size: 2em;
+  }
+
+  .title {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+
+  .text div {
+    font-size: 1.2em;
+  }
+
+  .gallery {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  .gallery img {
+    min-width: 50%;
+    height: auto;
+    max-width: 50%;
+    transition: all 1s;
+    animation-duration: 20s;
+    animation-name: galleryscroll;
+    animation-iteration-count: 1000;
+    margin: 0 0.4em;
+  }
+
+  @keyframes galleryscroll {
+    0% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(-400%);
+    }
+
+    100% {
+      transform: translateX(-0%);
+    }
+  }
+
+  .about-gallery,
+  .services {
+    display: flex;
+    padding: 1em 0;
+    overflow-x: scroll;
+  }
+
+  .about-gallery img {
+    min-width: 33.3%;
+    margin: 0 0.2em;
+  }
+
+  .services div {
+    min-width: 50%;
+    font-size: 1em;
+    padding: 2em;
+    margin: 0 0.2em;
+  }
+
+  .services h3 {
+    font-size: 2em;
+  }
+
+  .button {
+    padding-top: 20px;
+  }
+
+  .mt-l {
+    margin-top: 5rem;
+  }
+
+  .mt-xxl {
+    margin-top: 5rem;
+  }
+
+  .mt-xxxl {
+    margin-top: 10rem;
+  }
+
+  .contact p {
+    font-size: 2em;
+  }
+
+  footer {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+  }
+
+  footer a:link {
+    color: #fff;
+  }
 }

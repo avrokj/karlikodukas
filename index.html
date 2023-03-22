@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- https://www.figma.com/file/REg9lTMxDBCB9xlBPJdgBh/Free-Minimal-Portfolio-Website-UI-(Community)?node-id=27%3A15&t=51remBXkTNEtVgQT-0 -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Creative Brand & Identity Design Agency</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="container">
       <div class="logo">
-        <a href="index.html">LOGO</a>
+        <a href="/">LOGO</a>
       </div>
       <nav class="navbar">
-        <ul class="nav-links">
-          <div class="nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gallery.html">About</a></li>
-              <li><a href="reviews.html">Reviews</a></li>
-              <li><a href="contacts.html">Contact</a></li>
-            </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myBurger()">
+          <div class="burger" onclick="myBurgerIcon(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
-        </ul>
+        </a>
+        <div id="nav" class="nav">
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/portfolio#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
   <content class="container">
-    <div class="slogan mt160 mb160">
+    <div class="slogan mt-xl mb-xl">
       <div>Creative Brand & Identity Design Agency. We Are Imagine Stunning Visual Designs.</div>
     </div>
-    <h1 class="title">Portfolio</h1>
+    <h1 class="title pt-l mb-l">Portfolio</h1>
     <div class="container">
       <div class="gallery">
-        <img src="assets/Rectangle 1.png" alt="" />
-        <img src="assets/Rectangle 2.png" alt="" />
-        <img src="assets/Rectangle 4.png" alt="" />
-        <img src="assets/Rectangle 3.png" alt="" />
-        <img src="assets/Rectangle 11.png" alt="" />
-        <img src="assets/Rectangle 12.png" alt="" />
+        <a href="portfolio1.html"><img src="assets/rectangle1.png" alt="Rectangle 1" /></a>
+        <img src="assets/rectangle2.png" alt="" />
+        <img src="assets/rectangle4.png" alt="" />
+        <img src="assets/rectangle3.png" alt="" />
+        <img src="assets/rectangle11.png" alt="" />
+        <img src="assets/rectangle12.png" alt="" />
       </div>
     </div>
   </content>
-  <content class="container">
-    <h2 class="title mt160">About</h2>
+  <content id="about" class="container">
+    <h2 class="title mt-xxxl mb-s">About</h2>
     <div class="text container">
       <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a lectus
         a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornareLorem ipsum dolor sit amet, consectetur
@@ -58,62 +64,63 @@
     </div>
     <div class="container">
       <div class="about-gallery">
-        <img src="assets/Rectangle 7.png" alt="" />
-        <img src="assets/Rectangle 8.png" alt="" />
-        <img src="assets/Rectangle 9.png" alt="" />
-        <img src="assets/Rectangle 10.png" alt="" />
+        <img src="assets/about1.png" alt="" />
+        <img src="assets/about2.png" alt="" />
+        <img src="assets/about3.png" alt="" />
+        <img src="assets/about4.png" alt="" />
       </div>
     </div>
   </content>
   <content class="container">
-    <h2 class="title mt160">Services</h2>
+    <h2 class="title mt-xxl mb-s">Services</h2>
     <div class="container">
       <div class="services">
         <div class="services1">
           <h3>Web<br />Development</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a
             lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
-          <p class="button">Get a quote</p>
+          <p class="button"><a href="mailto:contact@email.com?subject=Web Development">Get a quote</a></p>
         </div>
         <div class="services2">
           <h3>Product<br />Design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a
             lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
-          <p class="button">Get a quote</p>
+          <p class="button"><a href="mailto:contact@email.com?subject=Product Design">Get a quote</a></p>
         </div>
         <div class="services3">
-          <h3>Product<br />Design</h3>
+          <h3>Graphic<br />Design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a
             lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
-          <p class="button">Get a quote</p>
+          <p class="button"><a href="mailto:contact@email.com?subject=Graphic Design Quote">Get a quote</a></p>
         </div>
         <div class="services4">
-          <h3>Product<br />Design</h3>
+          <h3>Mobile<br />App</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a
             lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
-          <p class="button">Get a quote</p>
+          <p class="button"><a href="mailto:contact@email.com?subject=Mobile App Quote">Get a quote</a></p>
         </div>
       </div>
     </div>
   </content>
-  <content class="container contact">
-    <h2 class="title mt160">Contact</h2>
-    <p>contact@email.com</p>
-    <p>+0 000 000</p>
+  <content id="contact" class="container contact">
+    <h2 class="title mt-xl mb-l">Contact</h2>
+    <p><a href="mailto:contact@email.com">contact@email.com</a></p>
+    <p><a href="tel:+0000000">+0 000 000</a></p>
   </content>
-  <footer>
+  <footer class="mt-xl">
     <div class="container">
-      <div>2022 Company</div>
+      <div class="bold"><a href="/"><span id="year"></span> Company</a></div>
       <ul class="nav-links">
         <div class="nav">
           <ul>
-            <li>Terms and Conditions</li>
-            <li>Privacy Policy</li>
+            <li><a href="/">Terms and Conditions</a></li>
+            <li><a href="/">Privacy Policy</a></li>
           </ul>
         </div>
       </ul>
     </div>
   </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>
